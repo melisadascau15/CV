@@ -1,0 +1,98 @@
+html { 
+    scroll-behavior: smooth; 
+}
+body { 
+    font-family: sans-serif; 
+    line-height: 1.5; 
+    background: #f4f4f4; 
+    color: #333; 
+}
+h2 { 
+    color: #007bff; 
+    border-bottom: 2px solid #007bff; 
+    padding-bottom: 5px; 
+    margin-bottom: 20px;
+}
+h3 {
+    margin-top: 30px;
+    color: #34495e;
+}
+.lead p {
+    text-indent: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.lead p + p {
+    margin-top: 0.5em; 
+}
+.lead ul {
+    padding-left: 2em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.lead ul li {
+    margin-bottom: 5px;
+}
+.custom-navbar {
+    background: #34495e !important;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
+.custom-navbar .nav-link {
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-item .active {
+    background: #5a7590;
+}
+.custom-footer { 
+    background: #34495e !important; 
+    color: #ccc; 
+    font-size: 0.8em; 
+}
+.social-icons a {
+    color: white !important;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.social-icons a:hover {
+    color: #007bff !important;
+}
+#teaser {
+    border-top: 1px dashed #ccc; 
+}
+.en { display: none; }
+.lang-active .ro { display: none; }
+.lang-active .en { display: inline; }
+
+/* Regulile vechi lang-toggle/lang-btn au fost înlocuite de lang-select */
+/* Păstrez totuși stilurile pentru lang-select */
+
+.lang-select { 
+    z-index: 1001; 
+}
+.lang-select .lang-btn {
+    padding: 5px 10px; 
+    font-weight: bold; 
+    transition: all 0.2s;
+    background: transparent !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+body:not(.lang-active) #lang-ro-btn, 
+body.lang-active #lang-en-btn { 
+    background: #007bff !important; 
+    color: white !important;
+    border-color: #007bff !important;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.lang-select .lang-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
